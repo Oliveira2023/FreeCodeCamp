@@ -1,0 +1,87 @@
+@charset "UTF-8";
+
+*{
+    
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    padding: 10px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1.6rem;
+    margin: auto;
+}
+#main{
+    margin-top: 30px;
+    background-color: #EEEEEE;
+    border-radius: 10px;
+    padding: 10px;
+    
+}
+#title-div{
+    text-align: center;
+    & p{
+        font-size: 0.7em;
+        margin-bottom: 10px;
+    }
+}
+
+#title{
+    font-size: 3rem;
+   font-weight: bold; 
+   margin: 0.67em 0;
+}
+#img-div{
+    width: 100%;
+    margin: auto;
+    background-color: white;
+    padding: 10px;
+    display: block;
+}
+#image{
+    object-fit: cover;
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: auto;
+}
+#img-caption{
+    text-align: center;
+    font-size: 0.8rem;
+    padding: 15px 0;
+    background-color: white;
+}
+#tribute-info{
+    width: 80%;
+    font-size: 0.8rem;
+    margin: auto;
+    & h2{
+        margin: 25px;
+        text-align: center;
+    }
+    & ul{
+        list-style: full circle;
+        padding-left: 20px;
+        text-align: left;
+        font-size: 0.9rem;
+        & li{
+            margin: 15px 0;
+        }
+    }
+    & p:not(:first-child){
+        margin: 20px 0;
+    }
+}
+#div-tribute-link{
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+#tribute-link{
+    text-decoration: none;
+    color: #477CA7;
+    
+}
+

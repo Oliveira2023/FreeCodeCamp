@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+     <h1 id="title">freeCodeCamp Survey Form</h1>
+    <p id ="description">Thank you for taking the time to help us improve the platform</p>
+    <form action="#" method="post" id="survey-form">
+        <fieldset class="itens-form">
+        <label id="name-label" for="name">Nome</label>
+        <input type="text" name="name" id="name" required placeholder="Input your name">
+        </fieldset>
+        <fieldset class="itens-form">
+        <label id="email-label" for="email">Email</label>
+        <input type="email" name="email" id="email" required placeholder="Input your email">
+        </fieldset>
+        <fieldset class="itens-form">
+        <label id="number-label" for="number">Age</label>
+        <input type="number" name="number" id="number" value="[0-9] {2,}" min="0" max="100" placeholder="Input your number">
+        </fieldset>
+        <fieldset class="itens-form">
+        <label id="dropdown-label" for="dropdown">Which option best describes your current role?</label>
+        <select name="dropdown" id="dropdown">
+            <option value="#">Select an option</option>
+            <option value="Student">Student</option>
+            <option value="Full time employee">Full time employee</option>
+            <option value="Part time employee">Part time employee</option>
+            <option value="Freelancer">Freelancer</option>
+            <option value="Other">Other</option>
+        </select>
+        </fieldset>
+        <fieldset class="itens-form" id="radio">
+            <p id="radio-label" >Would you recommend freeCodeCamp to a friend?</p>
+            <div  class="radio-group">
+                <label for="radio-label1">Definitely</label>
+                <input name="user-recommend" type="radio" id="radio-label1" value="Definitely">
+            </div>
+            <div class="radio-group">
+                <label for="radio-label2">Maybe</label>
+                <input name="user-recommend" type="radio" id="radio-label2" value="Maybe">
+            </div>
+            <div class="radio-group">
+                <label for="radio-label3">Not sure</label>
+                <input name="user-recommend" type="radio" id="radio-label3" value="Not sure">
+            </div>  
+                
+                </fieldset>
+        <fieldset class="itens-form">
+        <p>What would you like to see improved? (Check all that apply)</p>
+
+        <div class="checkbox-group">
+            <label class="checkbox-label" for="checkbox1">Front-end Projects</label>
+            <input type="checkbox" name="checkbox1" value="Front-end Projects" id="checkbox1">
+        </div>
+        <div class="checkbox-group">
+            <label for="checkbox2">Back-end Projects</label>
+            <input type="checkbox" name="checkbox2" value="Back-end Projects" id="checkbox2">
+        </div>
+        <div class="checkbox-group">
+            <label for="checkbox2">Videos</label>
+            <input type="checkbox" name="checkbox3" value="Videos" id="checkbox2">
+        </div>
+        <div class="checkbox-group">
+            <label for="checkbox3">Data Visualization</label>
+            <input type="checkbox" name="checkbox3" value="Data Visualization" id="checkbox3">
+        </div>
+        <div class="checkbox-group">
+            <label for="checkbox4">Challenges</label>
+            <input type="checkbox" name="checkbox4" value="Challenges" id="checkbox4">
+        </div>
+        <div class="checkbox-group">
+            <label for="checkbox5">Open Source Community</label>
+            <input type="checkbox" name="checkbox5" value="Open Source Community" id="checkbox5">
+        </div>
+        <div class="checkbox-group">
+            <label for="checkbox6">Additional Courses</label>
+            <input type="checkbox" name="checkbox6" value="Additional Courses" id="checkbox6">
+        </div>
+
+        </fieldset>
+
+        <fieldset class="itens-form">
+        <label id="textarea-label" for="textarea"Any comments or suggestions?></label>
+        <textarea name="textarea" id="textarea" cols="30" rows="10" placeholder="Enter your coment here..."></textarea></textarea>
+        </fieldset>
+        <fieldset class="itens-form">
+        <input type="submit" value="submit" id="submit">
+    </form>
+        </submit>
+</body>
+</html>
