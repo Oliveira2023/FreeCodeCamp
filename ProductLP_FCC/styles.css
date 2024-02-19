@@ -1,0 +1,141 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+}
+#header{
+    width: 100%;
+}
+#nav-bar{
+    position: fixed;
+    top: 0;
+    /* left: 0; */
+    width: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 80px;
+    background-color: aqua;
+    height: 80px;
+}
+#nav-bar ul{
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap: 20px;
+    & li{
+        & a{
+            text-decoration: none;
+        }
+    }
+}
+form {
+    margin-top: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    & input{
+        width: 250px;
+        height: 30px;
+    }
+    & button{
+
+    }
+    & h2{
+        margin: 10px;
+    }
+}
+#submit {
+    background-color: rgb(219, 219, 171);
+    font-weight: 600;
+    border: none;
+    border-radius: 5px;
+}
+.feature {
+    margin: 50px;
+}
+#products {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+}
+#products div {
+    margin-top: 20px;
+    border: 1px solid;
+    border-top: none;
+    min-width: 200px;
+    min-height: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    & h3 {
+        padding: 10px;
+        background-color: #00000050;
+        width: 100%;
+        text-align: center;
+    }
+    & h4 {
+        padding: 10px;
+    }
+    & p {
+        padding: 10px;
+    }
+}
+footer {
+    margin-top: 20px;
+    width: 100%;
+    & p {
+        text-align: end;
+    }
+}
+footer ul {
+    padding: 10px;
+    
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: end;
+    gap: 30px;
+    & li {
+        list-style: none;    
+    }
+    
+}
+
+@media screen and (max-width: 600px) {
+    #products {
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+    }
+    #products div {
+        min-width: 100%;
+        
+    }
+    #div-video {
+        width: 100%;
+        padding: 10px;
+        position: relative;
+        padding-bottom: 50%;
+    }
+    #div-video iframe {
+        position: absolute;
+        top: 5%;
+        left: 1%;
+        width: 97%;
+        height: 90%;
+        margin: 0px;
+    }
+}
